@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Kieran Summerfeldt
+email: kieran.summerfeldt@gmail.com 
+description: > # this means to ignore newlines until "baseurl:"
+  Full stack developer passionate about  designing web applications that seamlessly merge functionality and efficiency  with an intuitive user experience. I want to combine beautiful design with clean code, and bring great ideas to life.
+  When not writing code, you can find me on the tennis court or somewhere halfway across the world.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username:  Kiesum
+
+# Build settings
+markdown: kramdown
