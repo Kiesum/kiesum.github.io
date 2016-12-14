@@ -36,6 +36,26 @@ body {
     display: inline-block;   
     width: 66%;
     padding-left: $spacing-unit / 2;
+
+    .name {
+        margin: 0;
+        text-align: left;
+    }
+
+    .occupation {
+        font-style: italic;
+    }
+
+    .phone-number, .email, .github {
+        display: inline-block;
+        margin-right: $spacing-unit / 2;
+    }
+}
+
+.header-strip {
+    width: 100%;
+    height: 45px; 
+    background: $grey-color-light;
 }
 
 .headshot {
@@ -57,7 +77,10 @@ body {
 /** Experience & Education */
 
 .title {
-    text-align: center
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .experience {
@@ -73,6 +96,10 @@ body {
 
     &.right {
         text-align: right;
+    }
+
+    .date, .company {
+        margin: 0;
     }
 }
 
@@ -105,6 +132,22 @@ body {
     background: black;
 }
 
+@include media-query($on-palm) {
+
+    .timeline, .education .timeline {
+        display: none;
+    }
+
+    .information-block {
+        width: 100%;
+        padding: 0;
+
+        &.right {
+            text-align: left;
+        }
+    }
+}
+
 /** Skills */
 
 .skills {
@@ -113,6 +156,8 @@ body {
 
 .skills-list {
     list-style: none;
+    margin: 0;
+    text-align: center;
     
     li {
         display: inline-block;
@@ -120,6 +165,7 @@ body {
         padding: $spacing-unit / 2;
         margin: $spacing-unit / 2;
         background: white;
+        text-align: center;
     }
 }
 
@@ -131,6 +177,29 @@ body {
     padding: $spacing-unit;
     margin: auto;
     vertical-align: top;
+
+    .type {
+        color: $grey-color;
+    }
+
+    .name {
+        margin: 0;
+        font-weight: 400;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+
+        .tech-stack {
+            margin: 0;
+            font-weight: 400;
+        }
+
+        li {
+            display: inline-block;
+        }
+    }
 }
 
 @include media-query($on-palm) {
