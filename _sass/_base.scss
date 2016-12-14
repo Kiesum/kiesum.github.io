@@ -43,7 +43,7 @@ body {
     }
 
     .occupation {
-        font-style: italic;
+        color: $grey-color;
     }
 
     .phone-number, .email, .github {
@@ -71,6 +71,7 @@ body {
 
     .about {
         width: initial;
+        padding: 0;
     }
 }
 
@@ -87,6 +88,12 @@ body {
     background: $grey-color-light;
 }
 
+.experience .list, .education .list {
+    list-style: none;
+    margin: 0;
+}
+
+
 .information-block {
     display: inline-block;
     width: 49%;
@@ -98,9 +105,22 @@ body {
         text-align: right;
     }
 
-    .date, .company {
+    .date, .type, .role, .company, .place {
         margin: 0;
     }
+
+    .company, .type {
+        font-weight: 500;
+    }
+
+    .date {
+        font-weight: 00;
+    }
+
+    .role, .place {
+        color: $grey-color;
+    }
+
 }
 
 .timeline {
@@ -146,6 +166,11 @@ body {
             text-align: left;
         }
     }
+
+    .experience .list .list-item, .education .list .list-item {
+        padding-bottom: $spacing-unit;
+    }
+
 }
 
 /** Skills */
