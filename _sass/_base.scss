@@ -123,12 +123,16 @@ body {
 
 }
 
+.list-item:nth-child(4) .timeline {
+    height: 200px;
+}
+
 .timeline {
     display: inline-block;
     position: relative;
     top: 10px;
     width: 1px;
-    height: 270px;
+    height: 400px;
     background: black;
 
     &:before {
