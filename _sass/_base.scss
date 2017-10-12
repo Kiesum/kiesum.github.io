@@ -195,6 +195,11 @@ body {
         margin: $spacing-unit / 2;
         background: white;
         text-align: center;
+        border-radius: 10px;
+    }
+
+    img {
+        height: 68px;
     }
 }
 
