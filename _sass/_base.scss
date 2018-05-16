@@ -226,16 +226,11 @@ body {
     }
 
     ul {
-        list-style: none;
         margin: 0;
 
         .tech-stack {
             margin: 0;
             font-weight: 400;
-        }
-
-        li {
-            display: inline-block;
         }
     }
 }
